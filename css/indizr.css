@@ -1,0 +1,295 @@
+/* Custom styles for the Indizr.com homepage, building upon Skeleton frameowrk...
+
+CONTENTS
+
+- Typography
+- Images
+- Flag
+- Nav
+- Cards
+
+--------------------------------------------------------------------------------
+Typography
+-------------------------------------------------------------------------------- */
+
+@font-face {
+  font-family:'icons';src:url("../fonts/icons/icons.eot?58972676");src:url("../font/icons.eot?58972676#iefix") format("embedded-opentype"),url("../font/icons.woff2?58972676") format("woff2"),url("../fonts/icons/icons.woff?58972676") format("woff"),url("../fonts/icons/icons.ttf?58972676") format("truetype"),url("../fonts/icons/icons.svg?58972676#icons") format("svg");font-weight:normal;font-style:normal
+}
+
+@font-face {
+  font-family:'Cardo';font-style:normal;font-weight:400;src:url("../fonts/cardo/cardo-v9-latin-regular.eot");src:local("Cardo"),local("Cardo-Regular"),url("../fonts/cardo/cardo-v9-latin-regular.eot?#iefix") format("embedded-opentype"),url("../font/cardo-v9-latin-regular.woff2") format("woff2"),url("../fonts/cardo/cardo-v9-latin-regular.woff") format("woff"),url("../fonts/cardo/cardo-v9-latin-regular.ttf") format("truetype"),url("../fonts/cardo/cardo-v9-latin-regular.svg#Cardo") format("svg")
+}
+
+@font-face {
+  font-family:'Cardo';font-style:italic;font-weight:400;src:url("../fonts/cardo/cardo-v9-latin-italic.eot");src:local("Cardo Italic"),local("Cardo-Italic"),url("../fonts/cardo/cardo-v9-latin-italic.eot?#iefix") format("embedded-opentype"),url("../fonts/cardo/cardo-v9-latin-italic.woff2") format("woff2"),url("../fonts/cardo/cardo-v9-latin-italic.woff") format("woff"),url("../fonts/cardo/cardo-v9-latin-italic.ttf") format("truetype"),url("../fonts/cardo/cardo-v9-latin-italic.svg#Cardo") format("svg")
+}
+
+@font-face {
+  font-family:'Cardo';font-style:normal;font-weight:700;src:url("../fonts/cardo/cardo-v9-latin-700.eot");src:local("Cardo Bold"),local("Cardo-Bold"),url("../fonts/cardo/cardo-v9-latin-700.eot?#iefix") format("embedded-opentype"),url("../fonts/cardo/cardo-v9-latin-700.woff2") format("woff2"),url("../fonts/cardo/cardo-v9-latin-700.woff") format("woff"),url("../fonts/cardo/cardo-v9-latin-700.ttf") format("truetype"),url("../fonts/cardo/cardo-v9-latin-700.svg#Cardo") format("svg")
+}
+
+@font-face {
+  font-family:'Fira Sans';font-style:normal;font-weight:400;src:url("../fonts/fira/fira-sans-v8-latin-regular.eot");src:local("Fira Sans Regular"),local("FiraSans-Regular"),url("../fonts/fira/fira-sans-v8-latin-regular.eot?#iefix") format("embedded-opentype"),url("../fonts/fira/fira-sans-v8-latin-regular.woff2") format("woff2"),url("../fonts/fira/fira-sans-v8-latin-regular.woff") format("woff"),url("../fonts/fira/fira-sans-v8-latin-regular.ttf") format("truetype"),url("../fonts/fira/fira-sans-v8-latin-regular.svg#FiraSans") format("svg")
+}
+
+@font-face {
+  font-family:'Fira Sans';font-style:normal;font-weight:500;src:url("../fonts/fira/fira-sans-v8-latin-500.eot");src:local("Fira Sans Medium"),local("FiraSans-Medium"),url("../fonts/fira/fira-sans-v8-latin-500.eot?#iefix") format("embedded-opentype"),url("../fonts/fira/fira-sans-v8-latin-500.woff2") format("woff2"),url("../fonts/fira/fira-sans-v8-latin-500.woff") format("woff"),url("../fonts/fira/fira-sans-v8-latin-500.ttf") format("truetype"),url("../fonts/fira/fira-sans-v8-latin-500.svg#FiraSans") format("svg")
+}
+
+@font-face {
+  font-family:'Fira Sans';font-style:normal;font-weight:700;src:url("../fonts/fira/fira-sans-v8-latin-700.eot");src:local("Fira Sans Bold"),local("FiraSans-Bold"),url("../fonts/fira/fira-sans-v8-latin-700.eot?#iefix") format("embedded-opentype"),url("../fonts/fira/fira-sans-v8-latin-700.woff2") format("woff2"),url("../fonts/fira/fira-sans-v8-latin-700.woff") format("woff"),url("../fonts/fira/fira-sans-v8-latin-700.ttf") format("truetype"),url("../fonts/fira/fira-sans-v8-latin-700.svg#FiraSans") format("svg")
+}
+
+html {
+  font-size: 80%; /* Changing Skeleton default 62.5%. */
+
+/*
+  background: url('../img/graphpaper1500.jpg');
+  background-size: 325px auto;
+  background-repeat: repeat;
+*/
+
+  }
+
+body {
+    font-family: 'Cardo', serif;
+}
+
+h1, h2, h3, h4, h5, h6, nav {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+}
+
+a, a:visited {
+   color: #006EFF;
+   text-decoration: none;
+}
+
+a:hover {text-decoration: underline;}
+
+
+/*--------------------------------------------------------------------------------
+Images
+--------------------------------------------------------------------------------*/
+
+img {max-width: 100%}
+
+
+/*--------------------------------------------------------------------------------
+Flag
+--------------------------------------------------------------------------------*/
+
+#flag {
+  position: relative;
+  z-index: 0
+}
+
+#flag .eight {}
+
+#flag .eight img {  /* Navbar logo styles */
+  max-height: 60px;
+  }
+
+#flag .four {text-align: right;}
+
+#flag .four img { /*Social icon styles*/
+  min-width: 40px;
+  margin-right: 0.25rem;
+  }
+
+@media (max-width: 650px) {
+  #flag .four {display: none} /* Prevents conflict of icons vs everything */
+}
+
+
+@media (max-width: 575px) {
+
+
+}
+
+
+
+/*--------------------------------------------------------------------------------
+Nav
+--------------------------------------------------------------------------------*/
+
+nav {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  background: #363636;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  text-align:center;
+}
+
+nav ul.opening {
+  display: block;
+  height: auto;
+  width: 100%;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #575757;
+}
+
+nav li {}
+
+nav li:last-child {border-bottom: none;}
+
+nav a {
+  display: block;
+  padding: 0.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav a, nav a:visited {color: white;}
+
+nav a:hover, nav a:focus {background: #575757}
+
+.site-nav--icon {
+  font-size: 1.4em;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: rgba(255,255,255,.4);
+}
+
+/* Styles for the menu toggle... */
+
+.menu-toggle {
+  position: absolute;
+  padding: 0.8em;
+  top: 1em;
+  right: .5em;
+  cursor: pointer;
+}
+
+.hamburger, .hamburger::before, .hamburger::after {
+  content: '';
+  display: block;
+  background: #EBEBD3;
+  background: #909090;
+  height: 3px;
+  width: 2em;
+  border-radius: 3px;
+  -webkit-transition: all ease-in-out 350ms;
+  transition: all ease-in-out 350ms;
+}
+
+.hamburger::before {
+  -webkit-transform: translateY(-7px);
+  transform: translateY(-7px);
+}
+
+.hamburger::after {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+}
+
+.open .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.open .hamburger::before { display: none; }
+
+.open .hamburger::after {
+  -webkit-transform: translateY(-1px) rotate(-90deg);
+  transform: translateY(-1px) rotate(-90deg);
+}
+
+
+/*
+
+@media (min-width: 780px) {
+
+  .menu-toggle { display: none; }
+
+  nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  }
+
+  nav li {
+    flex: 1 1 auto;
+    border: none;
+  }
+
+  nav li a {
+    padding: 1.5em 1.3em 1.5em 1.3em;
+    margin: 0;
+    border: none;
+    background-color: #f04343;
+  }
+
+  nav a:hover,  nav a:focus { background-color: rgba(255,255,255,.10); }
+
+  .logo {
+    flex: 0 0 200px;
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #f04343;
+  }
+
+}
+
+*/
+
+/*--------------------------------------------------------------------------------
+Cards
+-------------------------------------------------------------------------------- */
+
+.card {
+  border: 1px solid #cccccc;
+  border-top: 3px solid #006EFF;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  height: 100%;
+  background: white;
+  margin-bottom: 2rem;
+}
+
+.card a {color: black; text-decoration: none}
+
+.card p a {color: #006EFF}
+
+.card p a:hover {text-decoration:underline}
+
+.card img {margin-bottom: 1rem}
+
+/*--------------------------------------------------------------------------------
+Footer
+-------------------------------------------------------------------------------- */
+
+.footer {
+  display: block;
+  background: #006EFF;
+  color: white;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+
+.footer li, .footer li * {
+  color:white;
+  list-style: square inside;
+}
+
+.footer a {}
