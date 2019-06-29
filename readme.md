@@ -1,6 +1,6 @@
 # Cardy (Alpha)
 
-A simple, responsive framework for static web pages, based on Indizr's homepage. Cardy is based on <a href="http://getskeleton.com">Skeleton</a>, with some extra jQuery magic and other customizations added in.
+A simple, responsive theme for static web pages, based on Indizr's homepage. Cardy is based on <a href="http://getskeleton.com">Skeleton</a>, with some extra jQuery magic and other customizations added in.
 
 Peter A. McKay
 peter[at]indizr[dot]com    
